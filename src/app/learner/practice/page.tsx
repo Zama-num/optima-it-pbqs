@@ -4,7 +4,7 @@ import { useState } from "react";
 import { getQuestions } from "@/lib/questions/loadQuestions";
 
 export default function PracticePage() {
-  const questions = getQuestions();
+  const questions = getQuestions().slice(0,25);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -140,9 +140,10 @@ export default function PracticePage() {
               Quiz Complete
             </h2>
 
-            <p>
-              Current Score: {score}
-            </p>
+            <p>Final Score: {score} / {questions.length}</p>
+            <p>Percentage: {Math.round((score / questions.length) * 100)}%</p>
+            <p>Status: {Math.round((score / questions.length) * 100) >= 85 ? "PASS" : "FAIL"}</p>
+            <p>Pass Mark: 85%</p>
           </div>
         )}
       </div>
