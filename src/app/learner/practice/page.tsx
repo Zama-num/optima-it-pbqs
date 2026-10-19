@@ -91,6 +91,7 @@ export default function PracticePage() {
     );
   }
 
+
   const question = questions[currentQuestion];
   const selected = answers[currentQuestion] || "";
 
@@ -140,6 +141,9 @@ export default function PracticePage() {
 
         <p>
           Score: {score}
+
+        <p>
+        </p>
         </p>
 
         <p>
@@ -260,6 +264,9 @@ export default function PracticePage() {
               Final Score: {score} / {questions.length}
 
         <p>
+        </p>
+
+        <p>
           Flagged: {flaggedQuestions.length}
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -295,6 +302,16 @@ export default function PracticePage() {
 
             <p>
               Pass Mark: 85%
+
+            <h3 className="mt-4 font-bold">Flagged Questions</h3>
+            <p>{flaggedQuestions.length} flagged question(s)</p>
+            <div className="mt-2">
+              {flaggedQuestions.map((q) => (
+                <span key={q} className="mr-2 border px-2 py-1">
+                  Q{q + 1}
+                </span>
+              ))}
+            </div>
             </p>
           </div>
         )}
