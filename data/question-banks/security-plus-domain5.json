@@ -1,0 +1,242 @@
+[
+  {
+    "id": "SY701-D5-0001",
+    "objective": "5.1",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the primary purpose of an Acceptable Use Policy (AUP)?",
+    "answers": [
+      "Define permitted and prohibited system usage",
+      "Encrypt network traffic",
+      "Create backups",
+      "Manage firewalls"
+    ],
+    "correctAnswer": "Define permitted and prohibited system usage",
+    "explanation": "An AUP establishes rules for the proper use of organisational resources."
+  },
+  {
+    "id": "SY701-D5-0002",
+    "objective": "5.1",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which document outlines actions to take during a security incident?",
+    "answers": [
+      "Incident Response Plan",
+      "Risk Register",
+      "Acceptable Use Policy",
+      "Data Classification Policy"
+    ],
+    "correctAnswer": "Incident Response Plan",
+    "explanation": "An Incident Response Plan defines procedures for handling security incidents."
+  },
+  {
+    "id": "SY701-D5-0003",
+    "objective": "5.1",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which policy defines how sensitive information should be handled?",
+    "answers": [
+      "Data Classification Policy",
+      "Password Policy",
+      "VPN Policy",
+      "Wireless Policy"
+    ],
+    "correctAnswer": "Data Classification Policy",
+    "explanation": "Data classification policies define how information must be labelled and protected."
+  },
+  {
+    "id": "SY701-D5-0004",
+    "objective": "5.2",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is risk management primarily concerned with?",
+    "answers": [
+      "Identifying and managing risks",
+      "Creating user accounts",
+      "Installing operating systems",
+      "Building websites"
+    ],
+    "correctAnswer": "Identifying and managing risks",
+    "explanation": "Risk management identifies, evaluates and addresses organisational risks."
+  },
+  {
+    "id": "SY701-D5-0005",
+    "objective": "5.2",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which document records identified risks and their treatment plans?",
+    "answers": [
+      "Risk Register",
+      "Asset Inventory",
+      "Change Log",
+      "Audit Report"
+    ],
+    "correctAnswer": "Risk Register",
+    "explanation": "A risk register tracks identified risks and mitigation actions."
+  },
+  {
+    "id": "SY701-D5-0006",
+    "objective": "5.2",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which risk response transfers financial responsibility to another party?",
+    "answers": [
+      "Transfer",
+      "Acceptance",
+      "Mitigation",
+      "Avoidance"
+    ],
+    "correctAnswer": "Transfer",
+    "explanation": "Risk transfer often involves insurance or contractual arrangements."
+  },
+  {
+    "id": "SY701-D5-0007",
+    "objective": "5.3",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is governance primarily responsible for?",
+    "answers": [
+      "Providing strategic direction and oversight",
+      "Patching servers",
+      "Monitoring logs",
+      "Configuring routers"
+    ],
+    "correctAnswer": "Providing strategic direction and oversight",
+    "explanation": "Governance ensures security aligns with business objectives."
+  },
+  {
+    "id": "SY701-D5-0008",
+    "objective": "5.3",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the purpose of a security audit?",
+    "answers": [
+      "Assess compliance and effectiveness",
+      "Encrypt user data",
+      "Install software updates",
+      "Monitor bandwidth"
+    ],
+    "correctAnswer": "Assess compliance and effectiveness",
+    "explanation": "Audits evaluate whether security controls and policies are functioning as intended."
+  },
+  {
+    "id": "SY701-D5-0009",
+    "objective": "5.4",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is the main goal of compliance requirements?",
+    "answers": [
+      "Meet legal and regulatory obligations",
+      "Improve internet speed",
+      "Increase storage capacity",
+      "Reduce staffing costs"
+    ],
+    "correctAnswer": "Meet legal and regulatory obligations",
+    "explanation": "Compliance ensures organisations follow relevant laws, regulations and standards."
+  },
+  {
+    "id": "SY701-D5-0010",
+    "objective": "5.4",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "Which regulation focuses on protecting personal data in Europe?",
+    "answers": [
+      "GDPR",
+      "RAID",
+      "DHCP",
+      "NAT"
+    ],
+    "correctAnswer": "GDPR",
+    "explanation": "GDPR establishes requirements for protecting personal data."
+  },
+  {
+    "id": "SY701-D5-0011",
+    "objective": "5.5",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is the purpose of security awareness training?",
+    "answers": [
+      "Educate users about security threats",
+      "Configure firewalls",
+      "Create backups",
+      "Install operating systems"
+    ],
+    "correctAnswer": "Educate users about security threats",
+    "explanation": "Security awareness training helps reduce human-related security risks."
+  },
+  {
+    "id": "SY701-D5-0012",
+    "objective": "5.5",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "Which activity best tests user susceptibility to phishing attacks?",
+    "answers": [
+      "Phishing Simulation",
+      "Penetration Test",
+      "Vulnerability Scan",
+      "Patch Audit"
+    ],
+    "correctAnswer": "Phishing Simulation",
+    "explanation": "Phishing simulations help assess and improve user awareness."
+  },
+  {
+    "id": "SY701-D5-0013",
+    "objective": "5.6",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is the primary goal of business continuity planning?",
+    "answers": [
+      "Maintain critical operations during disruption",
+      "Deploy software updates",
+      "Increase storage capacity",
+      "Implement encryption"
+    ],
+    "correctAnswer": "Maintain critical operations during disruption",
+    "explanation": "Business continuity ensures essential functions continue during adverse events."
+  },
+  {
+    "id": "SY701-D5-0014",
+    "objective": "5.6",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What does BIA stand for?",
+    "answers": [
+      "Business Impact Analysis",
+      "Backup Integrity Assessment",
+      "Baseline Information Audit",
+      "Business Investigation Activity"
+    ],
+    "correctAnswer": "Business Impact Analysis",
+    "explanation": "A BIA identifies critical processes and the impact of disruptions."
+  },
+  {
+    "id": "SY701-D5-0015",
+    "objective": "5.6",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "Which document defines how an organisation recovers after a major disruption?",
+    "answers": [
+      "Disaster Recovery Plan",
+      "Acceptable Use Policy",
+      "Asset Register",
+      "Password Policy"
+    ],
+    "correctAnswer": "Disaster Recovery Plan",
+    "explanation": "A Disaster Recovery Plan outlines procedures for restoring systems and services."
+  }
+]
