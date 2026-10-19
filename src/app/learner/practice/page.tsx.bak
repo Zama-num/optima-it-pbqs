@@ -1,0 +1,81 @@
+"use client";
+
+import { useState } from "react";
+import { getQuestions } from "@/lib/questions/loadQuestions";
+
+export default function PracticePage() {
+  const questions = getQuestions();
+
+  const [selected, setSelected] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const question = questions[0];
+
+  const isCorrect =
+    selected === question.correctAnswer;
+
+  return (
+    <main className="p-8">
+      <h1 className="text-3xl font-bold">
+        Practice Mode
+      </h1>
+
+      <h2 className="mt-6 text-xl font-semibold">
+        {question.question}
+      </h2>
+
+      <div className="mt-4">
+        {question.answers.map((answer) => (
+          <label
+            key={answer}
+            className="block mb-2"
+          >
+            <input
+              type="radio"
+              value={answer}
+              checked={selected === answer}
+              onChange={(e) =>
+                setSelected(e.target.value)
+              }
+            />
+            <span className="ml-2">
+              {answer}
+            </span>
+          </label>
+        ))}
+      </div>
+
+      {!submitted && (
+        <button
+          className="mt-4 border px-4 py-2"
+          disabled={!selected}
+          onClick={() => setSubmitted(true)}
+        >
+          Submit Answer
+        </button>
+      )}
+
+      {submitted && (
+        <div className="mt-6">
+          <p>
+            {isCorrect
+              ? "✅ Correct"
+              : "❌ Incorrect"}
+          </p>
+
+          <p className="mt-2">
+            Correct Answer:
+            {" "}
+            {question.correctAnswer}
+          </p>
+
+          <p className="mt-2">
+            Explanation:
+            {" "}
+            {question.explanation}
+          </p>
+        </div>
+      )}
+    </main>
+  );
+}

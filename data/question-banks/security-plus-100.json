@@ -1,0 +1,162 @@
+[
+  {
+    "id": "SY701-0001",
+    "objective": "1.1",
+    "domain": "General Security Concepts",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which security principle ensures information is accessible when required?",
+    "answers": [
+      "Confidentiality",
+      "Availability",
+      "Integrity",
+      "Non-repudiation"
+    ],
+    "correctAnswer": "Availability",
+    "explanation": "Availability ensures systems and data can be accessed by authorised users when needed."
+  },
+  {
+    "id": "SY701-0002",
+    "objective": "1.2",
+    "domain": "General Security Concepts",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What does MFA stand for?",
+    "answers": [
+      "Multiple Factor Authentication",
+      "Managed Firewall Access",
+      "Most Frequent Authentication",
+      "Multi Function Account"
+    ],
+    "correctAnswer": "Multiple Factor Authentication",
+    "explanation": "Multi-factor authentication requires two or more authentication factors."
+  },
+  {
+    "id": "SY701-0003",
+    "objective": "1.3",
+    "domain": "General Security Concepts",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which principle grants users only the permissions necessary to perform their duties?",
+    "answers": [
+      "Least Privilege",
+      "Job Rotation",
+      "Separation of Duties",
+      "Attribution"
+    ],
+    "correctAnswer": "Least Privilege",
+    "explanation": "Least privilege limits permissions to only those required for a specific role."
+  },
+  {
+    "id": "SY701-0004",
+    "objective": "2.1",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which type of malware encrypts files and demands payment for their release?",
+    "answers": [
+      "Trojan",
+      "Rootkit",
+      "Ransomware",
+      "Spyware"
+    ],
+    "correctAnswer": "Ransomware",
+    "explanation": "Ransomware encrypts data and demands payment to restore access."
+  },
+  {
+    "id": "SY701-0005",
+    "objective": "2.2",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which attack attempts to trick users into disclosing sensitive information?",
+    "answers": [
+      "DDoS",
+      "Phishing",
+      "SQL Injection",
+      "Privilege Escalation"
+    ],
+    "correctAnswer": "Phishing",
+    "explanation": "Phishing uses fraudulent communications to deceive users into revealing information."
+  },
+  {
+    "id": "SY701-0006",
+    "objective": "3.1",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which device is primarily used to filter network traffic according to security rules?",
+    "answers": [
+      "Firewall",
+      "NAS",
+      "Printer",
+      "Patch Panel"
+    ],
+    "correctAnswer": "Firewall",
+    "explanation": "A firewall filters traffic based on defined security policies."
+  },
+  {
+    "id": "SY701-0007",
+    "objective": "3.2",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the primary benefit of network segmentation?",
+    "answers": [
+      "Reduced attack surface",
+      "Increased hard disk space",
+      "Improved printing performance",
+      "Reduced monitor resolution"
+    ],
+    "correctAnswer": "Reduced attack surface",
+    "explanation": "Network segmentation limits the spread of attacks between network segments."
+  },
+  {
+    "id": "SY701-0008",
+    "objective": "4.1",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which process involves applying security updates to systems?",
+    "answers": [
+      "Patching",
+      "Hashing",
+      "Tokenisation",
+      "Masking"
+    ],
+    "correctAnswer": "Patching",
+    "explanation": "Patching addresses vulnerabilities by applying software updates."
+  },
+  {
+    "id": "SY701-0009",
+    "objective": "4.2",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which Windows log typically records login attempts?",
+    "answers": [
+      "Security Log",
+      "DNS Log",
+      "Print Log",
+      "Application Log"
+    ],
+    "correctAnswer": "Security Log",
+    "explanation": "The Windows Security Log records authentication and authorisation events."
+  },
+  {
+    "id": "SY701-0010",
+    "objective": "5.1",
+    "domain": "Security Program Management and Oversight",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which document defines acceptable behaviour when using organisational systems?",
+    "answers": [
+      "Acceptable Use Policy",
+      "Risk Register",
+      "Business Impact Analysis",
+      "Disaster Recovery Plan"
+    ],
+    "correctAnswer": "Acceptable Use Policy",
+    "explanation": "An Acceptable Use Policy defines permitted and prohibited activities."
+  }
+]

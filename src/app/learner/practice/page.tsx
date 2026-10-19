@@ -27,14 +27,11 @@ export default function PracticePage() {
   const handleNext = () => {
     setSelected("");
     setSubmitted(false);
-
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion((prev) => prev + 1);
-    }
+    setCurrentQuestion((prev) => prev + 1);
   };
 
   return (
-    <main className="p-8 max-w-3xl mx-auto">
+    <main className="p-8">
       <h1 className="text-4xl font-bold">
         Practice Mode
       </h1>
@@ -49,20 +46,19 @@ export default function PracticePage() {
         </p>
       </div>
 
-      <div className="border rounded p-6 mt-6">
+      <div className="mt-6 border rounded p-6">
         <h2 className="text-xl font-bold">
           {question.question}
         </h2>
 
-        <div className="mt-4 space-y-2">
-          {question.answers.map((answer) => (
+        <div className="mt-4">
+          {question.answers.map((answer: string) => (
             <label
               key={answer}
-              className="block"
+              className="block mb-2"
             >
               <input
                 type="radio"
-                name="answer"
                 value={answer}
                 checked={selected === answer}
                 disabled={submitted}
@@ -80,7 +76,7 @@ export default function PracticePage() {
 
         {!submitted && (
           <button
-            className="mt-4 bg-blue-600 text-white px-4 py-2 rounded"
+            className="mt-4 border px-4 py-2"
             disabled={!selected}
             onClick={handleSubmit}
           >
@@ -106,7 +102,7 @@ export default function PracticePage() {
 
             {currentQuestion < questions.length - 1 ? (
               <button
-                className="mt-4 bg-green-600 text-white px-4 py-2 rounded"
+                className="mt-4 border px-4 py-2"
                 onClick={handleNext}
               >
                 Next Question

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "SY701-D2-0001",
+    "objective": "2.1",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which type of malware encrypts files and demands payment for their release?",
+    "answers": ["Rootkit", "Trojan", "Ransomware", "Spyware"],
+    "correctAnswer": "Ransomware",
+    "explanation": "Ransomware encrypts files and demands payment before restoring access."
+  },
+  {
+    "id": "SY701-D2-0002",
+    "objective": "2.1",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which attack overwhelms a target with traffic from multiple systems?",
+    "answers": ["Phishing", "DDoS", "Tailgating", "Whaling"],
+    "correctAnswer": "DDoS",
+    "explanation": "A Distributed Denial-of-Service attack floods a target with traffic from many sources."
+  },
+  {
+    "id": "SY701-D2-0003",
+    "objective": "2.1",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which social engineering attack uses fraudulent email messages?",
+    "answers": ["Shoulder Surfing", "Phishing", "Dumpster Diving", "Tailgating"],
+    "correctAnswer": "Phishing",
+    "explanation": "Phishing uses deceptive emails to trick users into revealing information."
+  },
+  {
+    "id": "SY701-D2-0004",
+    "objective": "2.1",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is vishing?",
+    "answers": [
+      "Voice phishing",
+      "Video malware",
+      "Visual hacking",
+      "Credential stuffing"
+    ],
+    "correctAnswer": "Voice phishing",
+    "explanation": "Vishing is a social engineering attack conducted over voice calls."
+  },
+  {
+    "id": "SY701-D2-0005",
+    "objective": "2.1",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is smishing?",
+    "answers": [
+      "SMS phishing",
+      "Wireless eavesdropping",
+      "System misconfiguration",
+      "Password spraying"
+    ],
+    "correctAnswer": "SMS phishing",
+    "explanation": "Smishing uses text messages to lure victims into providing sensitive information."
+  },
+  {
+    "id": "SY701-D2-0006",
+    "objective": "2.2",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which vulnerability results from software not being updated?",
+    "answers": [
+      "Zero-day",
+      "Unpatched system",
+      "Privilege escalation",
+      "Insider threat"
+    ],
+    "correctAnswer": "Unpatched system",
+    "explanation": "Unpatched systems often contain known vulnerabilities that can be exploited."
+  },
+  {
+    "id": "SY701-D2-0007",
+    "objective": "2.2",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which attack tries commonly used passwords against many accounts?",
+    "answers": [
+      "Brute force",
+      "Password spraying",
+      "Rainbow table",
+      "Dictionary attack"
+    ],
+    "correctAnswer": "Password spraying",
+    "explanation": "Password spraying uses a few commonly used passwords across many accounts."
+  },
+  {
+    "id": "SY701-D2-0008",
+    "objective": "2.2",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is a zero-day vulnerability?",
+    "answers": [
+      "A vulnerability already patched",
+      "A vulnerability unknown to the vendor",
+      "A vulnerability found in one day",
+      "A vulnerability with no risk"
+    ],
+    "correctAnswer": "A vulnerability unknown to the vendor",
+    "explanation": "A zero-day vulnerability is exploited before a vendor has had the opportunity to create a fix."
+  },
+  {
+    "id": "SY701-D2-0009",
+    "objective": "2.3",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which control best mitigates phishing attacks?",
+    "answers": [
+      "Security awareness training",
+      "RAID",
+      "Load balancing",
+      "DHCP"
+    ],
+    "correctAnswer": "Security awareness training",
+    "explanation": "User awareness training helps employees identify and avoid phishing attempts."
+  },
+  {
+    "id": "SY701-D2-0010",
+    "objective": "2.3",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which control reduces the impact of compromised passwords?",
+    "answers": [
+      "MFA",
+      "DNS",
+      "NAT",
+      "RAID"
+    ],
+    "correctAnswer": "MFA",
+    "explanation": "Multi-factor authentication adds an additional layer of security beyond passwords."
+  }
+]
