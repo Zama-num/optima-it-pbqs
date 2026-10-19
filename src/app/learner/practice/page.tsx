@@ -12,6 +12,7 @@ export default function PracticePage() {
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [domainScores, setDomainScores] = useState<Record<string, { correct: number; total: number }>>({});
 
   const startQuiz = () => {
     const filteredQuestions =
