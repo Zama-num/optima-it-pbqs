@@ -4,12 +4,62 @@ import { useState } from "react";
 import { getQuestions } from "@/lib/questions/loadQuestions";
 
 export default function PracticePage() {
-  const questions = [...getQuestions()].sort(() => Math.random() - 0.5).slice(0,25);
-
+  const [quizStarted, setQuizStarted] = useState(false);
+  const [quizSize, setQuizSize] = useState(25);
+  const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+
+  const startQuiz = () => {
+    const selectedQuestions = [...getQuestions()]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, quizSize);
+
+    setQuestions(selectedQuestions);
+    setCurrentQuestion(0);
+    setAnswers({});
+    setSubmitted(false);
+    setScore(0);
+    setQuizStarted(true);
+  };
+
+  if (!quizStarted) {
+    return (
+      <main className="p-8">
+        <h1 className="text-4xl font-bold">
+          Practice Mode
+        </h1>
+
+        <div className="mt-6">
+          <label className="block mb-2">
+            Select Quiz Size
+          </label>
+
+          <select
+            className="border p-2"
+            value={quizSize}
+            onChange={(e) =>
+              setQuizSize(Number(e.target.value))
+            }
+          >
+            <option value={10}>10 Questions</option>
+            <option value={25}>25 Questions</option>
+            <option value={50}>50 Questions</option>
+            <option value={80}>80 Questions</option>
+          </select>
+        </div>
+
+        <button
+          className="mt-4 border px-4 py-2"
+          onClick={startQuiz}
+        >
+          Start Quiz
+        </button>
+      </main>
+    );
+  }
 
   const question = questions[currentQuestion];
   const selected = answers[currentQuestion] || "";
@@ -74,7 +124,7 @@ export default function PracticePage() {
                 onChange={(e) =>
                   setAnswers({
                     ...answers,
-                    [currentQuestion]: e.target.value
+                    [currentQuestion]: e.target.value,
                   })
                 }
               />
@@ -140,10 +190,27 @@ export default function PracticePage() {
               Quiz Complete
             </h2>
 
-            <p>Final Score: {score} / {questions.length}</p>
-            <p>Percentage: {Math.round((score / questions.length) * 100)}%</p>
-            <p>Status: {Math.round((score / questions.length) * 100) >= 85 ? "PASS" : "FAIL"}</p>
-            <p>Pass Mark: 85%</p>
+            <p>
+              Final Score: {score} / {questions.length}
+            </p>
+
+            <p>
+              Percentage: {Math.round(
+                (score / questions.length) * 100
+              )}%
+            </p>
+
+            <p>
+              Status: {Math.round(
+                (score / questions.length) * 100
+              ) >= 85
+                ? "PASS"
+                : "FAIL"}
+            </p>
+
+            <p>
+              Pass Mark: 85%
+            </p>
           </div>
         )}
       </div>
