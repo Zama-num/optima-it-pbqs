@@ -155,3 +155,164 @@
     "explanation": "SSO allows users to authenticate once and access multiple applications."
   }
 ]
+,
+{
+  "id": "SY701-D3-0011",
+  "objective": "3.5",
+  "domain": "Security Architecture",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "What is the primary purpose of a VLAN?",
+  "answers": [
+    "Segment network traffic",
+    "Increase storage capacity",
+    "Replace a firewall",
+    "Provide internet access"
+  ],
+  "correctAnswer": "Segment network traffic",
+  "explanation": "VLANs logically separate network traffic to improve security and manageability."
+},
+{
+  "id": "SY701-D3-0012",
+  "objective": "3.5",
+  "domain": "Security Architecture",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "What does NAC stand for?",
+  "answers": [
+    "Network Access Control",
+    "Network Application Controller",
+    "New Authentication Certificate",
+    "Network Audit Configuration"
+  ],
+  "correctAnswer": "Network Access Control",
+  "explanation": "NAC controls device access to the network based on security policies."
+},
+{
+  "id": "SY701-D3-0013",
+  "objective": "3.5",
+  "domain": "Security Architecture",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "Which solution detects suspicious activity but does not automatically block it?",
+  "answers": [
+    "IDS",
+    "IPS",
+    "Firewall",
+    "Proxy"
+  ],
+  "correctAnswer": "IDS",
+  "explanation": "An Intrusion Detection System identifies suspicious activity and generates alerts."
+},
+{
+  "id": "SY701-D3-0014",
+  "objective": "3.5",
+  "domain": "Security Architecture",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "Which security solution can automatically block malicious traffic?",
+  "answers": [
+    "IPS",
+    "IDS",
+    "VPN",
+    "Router"
+  ],
+  "correctAnswer": "IPS",
+  "explanation": "An Intrusion Prevention System can detect and stop malicious activity automatically."
+},
+{
+  "id": "SY701-D3-0015",
+  "objective": "3.6",
+  "domain": "Security Architecture",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "What is the primary purpose of a web application firewall (WAF)?",
+  "answers": [
+    "Protect web applications",
+    "Replace DNS",
+    "Manage wireless connections",
+    "Encrypt hard drives"
+  ],
+  "correctAnswer": "Protect web applications",
+  "explanation": "A WAF filters and monitors HTTP traffic to web applications."
+},
+{
+  "id": "SY701-D3-0016",
+  "objective": "3.6",
+  "domain": "Security Architecture",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "What is a container primarily used for?",
+  "answers": [
+    "Application isolation",
+    "Network routing",
+    "Database replication",
+    "Load balancing"
+  ],
+  "correctAnswer": "Application isolation",
+  "explanation": "Containers isolate applications and their dependencies in lightweight environments."
+},
+{
+  "id": "SY701-D3-0017",
+  "objective": "3.6",
+  "domain": "Security Architecture",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which technology allows multiple virtual systems to run on one physical server?",
+  "answers": [
+    "Virtualisation",
+    "Tokenisation",
+    "Hashing",
+    "NAT"
+  ],
+  "correctAnswer": "Virtualisation",
+  "explanation": "Virtualisation enables multiple virtual machines to share physical resources."
+},
+{
+  "id": "SY701-D3-0018",
+  "objective": "3.7",
+  "domain": "Security Architecture",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "What does CASB stand for?",
+  "answers": [
+    "Cloud Access Security Broker",
+    "Cloud Authentication Service Bridge",
+    "Corporate Access Security Baseline",
+    "Cloud Application Security Base"
+  ],
+  "correctAnswer": "Cloud Access Security Broker",
+  "explanation": "CASB solutions provide security visibility and control between users and cloud services."
+},
+{
+  "id": "SY701-D3-0019",
+  "objective": "3.7",
+  "domain": "Security Architecture",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "What does SASE stand for?",
+  "answers": [
+    "Secure Access Service Edge",
+    "Secure Architecture Service Environment",
+    "System Access Security Endpoint",
+    "Security Access Software Engine"
+  ],
+  "correctAnswer": "Secure Access Service Edge",
+  "explanation": "SASE combines networking and security services into a cloud-delivered model."
+},
+{
+  "id": "SY701-D3-0020",
+  "objective": "3.7",
+  "domain": "Security Architecture",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which architecture model assumes no user or device should be trusted by default?",
+  "answers": [
+    "Zero Trust",
+    "DMZ",
+    "Trusted Network",
+    "Mesh Network"
+  ],
+  "correctAnswer": "Zero Trust",
+  "explanation": "Zero Trust assumes breach and requires continual verification of access requests."
+}
