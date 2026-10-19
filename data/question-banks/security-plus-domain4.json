@@ -1,0 +1,322 @@
+[
+  {
+    "id": "SY701-D4-0001",
+    "objective": "4.1",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the primary purpose of an incident response plan?",
+    "answers": [
+      "Respond to security incidents",
+      "Increase bandwidth",
+      "Encrypt all files",
+      "Replace backups"
+    ],
+    "correctAnswer": "Respond to security incidents",
+    "explanation": "An incident response plan provides a structured approach to handling security incidents."
+  },
+  {
+    "id": "SY701-D4-0002",
+    "objective": "4.1",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which phase of incident response involves identifying a security event?",
+    "answers": [
+      "Detection",
+      "Recovery",
+      "Lessons Learned",
+      "Containment"
+    ],
+    "correctAnswer": "Detection",
+    "explanation": "Detection involves identifying and validating security incidents."
+  },
+  {
+    "id": "SY701-D4-0003",
+    "objective": "4.1",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which phase of incident response focuses on limiting the impact of an attack?",
+    "answers": [
+      "Containment",
+      "Preparation",
+      "Recovery",
+      "Monitoring"
+    ],
+    "correctAnswer": "Containment",
+    "explanation": "Containment prevents an incident from spreading further."
+  },
+  {
+    "id": "SY701-D4-0004",
+    "objective": "4.1",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which phase restores affected systems to normal operation?",
+    "answers": [
+      "Recovery",
+      "Detection",
+      "Containment",
+      "Analysis"
+    ],
+    "correctAnswer": "Recovery",
+    "explanation": "Recovery returns systems to normal business operations."
+  },
+  {
+    "id": "SY701-D4-0005",
+    "objective": "4.2",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What does SIEM stand for?",
+    "answers": [
+      "Security Information and Event Management",
+      "Secure Identity Event Monitoring",
+      "System Information Event Management",
+      "Security Integration Event Model"
+    ],
+    "correctAnswer": "Security Information and Event Management",
+    "explanation": "SIEM platforms aggregate and analyse logs from multiple sources."
+  },
+  {
+    "id": "SY701-D4-0006",
+    "objective": "4.2",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the primary purpose of log analysis?",
+    "answers": [
+      "Identify suspicious activity",
+      "Increase performance",
+      "Create backups",
+      "Configure firewalls"
+    ],
+    "correctAnswer": "Identify suspicious activity",
+    "explanation": "Log analysis helps detect and investigate security events."
+  },
+  {
+    "id": "SY701-D4-0007",
+    "objective": "4.2",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which type of log records authentication events in Windows?",
+    "answers": [
+      "Security Log",
+      "Application Log",
+      "Print Log",
+      "DNS Log"
+    ],
+    "correctAnswer": "Security Log",
+    "explanation": "The Security Log records authentication and authorisation events."
+  },
+  {
+    "id": "SY701-D4-0008",
+    "objective": "4.3",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the purpose of a backup?",
+    "answers": [
+      "Enable data recovery",
+      "Prevent phishing",
+      "Encrypt traffic",
+      "Filter malware"
+    ],
+    "correctAnswer": "Enable data recovery",
+    "explanation": "Backups allow organisations to recover after data loss events."
+  },
+  {
+    "id": "SY701-D4-0009",
+    "objective": "4.3",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which backup contains all selected data every time it runs?",
+    "answers": [
+      "Full Backup",
+      "Incremental Backup",
+      "Differential Backup",
+      "Snapshot"
+    ],
+    "correctAnswer": "Full Backup",
+    "explanation": "A full backup captures all selected data."
+  },
+  {
+    "id": "SY701-D4-0010",
+    "objective": "4.3",
+    "domain": "Security Operations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which backup stores only changes since the last backup of any type?",
+    "answers": [
+      "Incremental Backup",
+      "Full Backup",
+      "Archive Backup",
+      "Mirror Backup"
+    ],
+    "correctAnswer": "Incremental Backup",
+    "explanation": "Incremental backups store only data changed since the previous backup."
+  },
+  {
+    "id": "SY701-D4-0011",
+    "objective": "4.4",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What does RTO stand for?",
+    "answers": [
+      "Recovery Time Objective",
+      "Recovery Testing Operation",
+      "Remote Transfer Objective",
+      "Response Time Output"
+    ],
+    "correctAnswer": "Recovery Time Objective",
+    "explanation": "RTO defines the maximum acceptable downtime."
+  },
+  {
+    "id": "SY701-D4-0012",
+    "objective": "4.4",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What does RPO stand for?",
+    "answers": [
+      "Recovery Point Objective",
+      "Recovery Processing Output",
+      "Remote Point Operation",
+      "Risk Prevention Objective"
+    ],
+    "correctAnswer": "Recovery Point Objective",
+    "explanation": "RPO defines the maximum acceptable amount of data loss."
+  },
+  {
+    "id": "SY701-D4-0013",
+    "objective": "4.4",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is the primary goal of disaster recovery?",
+    "answers": [
+      "Restore systems after disruption",
+      "Prevent phishing",
+      "Replace firewalls",
+      "Encrypt data"
+    ],
+    "correctAnswer": "Restore systems after disruption",
+    "explanation": "Disaster recovery focuses on restoring IT services following a major incident."
+  },
+  {
+    "id": "SY701-D4-0014",
+    "objective": "4.5",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is digital forensics primarily concerned with?",
+    "answers": [
+      "Collecting and analysing evidence",
+      "Creating backups",
+      "Designing networks",
+      "Performing patch management"
+    ],
+    "correctAnswer": "Collecting and analysing evidence",
+    "explanation": "Digital forensics identifies, preserves and analyses digital evidence."
+  },
+  {
+    "id": "SY701-D4-0015",
+    "objective": "4.5",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is chain of custody?",
+    "answers": [
+      "Documentation of evidence handling",
+      "Firewall configuration process",
+      "Backup retention schedule",
+      "Network segmentation strategy"
+    ],
+    "correctAnswer": "Documentation of evidence handling",
+    "explanation": "Chain of custody tracks evidence ownership and handling."
+  },
+  {
+    "id": "SY701-D4-0016",
+    "objective": "4.6",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is threat hunting?",
+    "answers": [
+      "Proactively searching for threats",
+      "Blocking websites",
+      "Recovering backups",
+      "Building firewalls"
+    ],
+    "correctAnswer": "Proactively searching for threats",
+    "explanation": "Threat hunting seeks indicators of compromise before alerts are triggered."
+  },
+  {
+    "id": "SY701-D4-0017",
+    "objective": "4.6",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "What is an IOC?",
+    "answers": [
+      "Indicator of Compromise",
+      "Incident Operating Centre",
+      "Information Output Check",
+      "Integrated Operations Console"
+    ],
+    "correctAnswer": "Indicator of Compromise",
+    "explanation": "An IOC is evidence suggesting malicious activity may have occurred."
+  },
+  {
+    "id": "SY701-D4-0018",
+    "objective": "4.6",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "Which activity helps verify systems remain secure after changes?",
+    "answers": [
+      "Continuous Monitoring",
+      "Defragmentation",
+      "Printing Logs",
+      "Disk Formatting"
+    ],
+    "correctAnswer": "Continuous Monitoring",
+    "explanation": "Continuous monitoring identifies security issues as environments change."
+  },
+  {
+    "id": "SY701-D4-0019",
+    "objective": "4.7",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "Which metric measures the average time required to detect an incident?",
+    "answers": [
+      "MTTD",
+      "RTO",
+      "RPO",
+      "SLA"
+    ],
+    "correctAnswer": "MTTD",
+    "explanation": "Mean Time To Detect measures incident detection performance."
+  },
+  {
+    "id": "SY701-D4-0020",
+    "objective": "4.7",
+    "domain": "Security Operations",
+    "difficulty": "Intermediate",
+    "type": "multiple_choice",
+    "question": "Which metric measures the average time required to resolve an incident?",
+    "answers": [
+      "MTTR",
+      "MTTD",
+      "RPO",
+      "BIA"
+    ],
+    "correctAnswer": "MTTR",
+    "explanation": "Mean Time To Respond or Recover measures incident resolution performance."
+  }
+]
