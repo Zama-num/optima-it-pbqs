@@ -6,6 +6,7 @@ import { getQuestions } from "@/lib/questions/loadQuestions";
 export default function PracticePage() {
   const [quizStarted, setQuizStarted] = useState(false);
   const [quizSize, setQuizSize] = useState(25);
+  const [selectedDomain, setSelectedDomain] = useState("all");
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -13,7 +14,13 @@ export default function PracticePage() {
   const [score, setScore] = useState(0);
 
   const startQuiz = () => {
-    const selectedQuestions = [...getQuestions()]
+    const filteredQuestions =
+      selectedDomain === "all"
+        ? getQuestions()
+        : getQuestions().filter(
+            (q) => q.domain === selectedDomain
+          );
+    const selectedQuestions = [...filteredQuestions]
       .sort(() => Math.random() - 0.5)
       .slice(0, quizSize);
 
@@ -49,6 +56,27 @@ export default function PracticePage() {
             <option value={50}>50 Questions</option>
             <option value={80}>80 Questions</option>
           </select>
+
+        <div className="mt-4">
+          <label className="block mb-2">
+            Select Domain
+          </label>
+
+          <select
+            className="border p-2"
+            value={selectedDomain}
+            onChange={(e) =>
+              setSelectedDomain(e.target.value)
+            }
+          >
+            <option value="all">All Domains</option>
+            <option value="General Security Concepts">Domain 1</option>
+            <option value="Threats, Vulnerabilities and Mitigations">Domain 2</option>
+            <option value="Security Architecture">Domain 3</option>
+            <option value="Security Operations">Domain 4</option>
+            <option value="Security Program Management and Oversight">Domain 5</option>
+          </select>
+        </div>
         </div>
 
         <button
