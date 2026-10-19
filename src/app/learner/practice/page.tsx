@@ -52,12 +52,6 @@ export default function PracticePage() {
 
         <p>
           Score: {score}
-        <div className="mt-4 w-full bg-gray-200 rounded-full h-4">
-          <div className="bg-blue-600 h-4 rounded-full" style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}></div>
-        </div>
-        <p className="mt-2">
-          Progress: {Math.round(((currentQuestion + 1) / questions.length) * 100)}%
-        </p>
         </p>
       </div>
 
@@ -148,12 +142,6 @@ export default function PracticePage() {
 
             <p>
               Current Score: {score}
-        <div className="mt-4 w-full bg-gray-200 rounded-full h-4">
-          <div className="bg-blue-600 h-4 rounded-full" style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}></div>
-        </div>
-        <p className="mt-2">
-          Progress: {Math.round(((currentQuestion + 1) / questions.length) * 100)}%
-        </p>
             </p>
           </div>
         )}
