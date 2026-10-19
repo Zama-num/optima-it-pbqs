@@ -304,6 +304,21 @@ export default function PracticePage() {
               Pass Mark: 85%
 
             <h3 className="mt-4 font-bold">Flagged Questions</h3>
+
+            <div className="mt-2">
+              {flaggedQuestions.map((q) => (
+                <button
+                  key={q}
+                  className="mr-2 border px-2 py-1"
+                  onClick={() => {
+                    setCurrentQuestion(q);
+                    setSubmitted(false);
+                  }}
+                >
+                  Go to Q{q + 1}
+                </button>
+              ))}
+            </div>
             <p>{flaggedQuestions.length} flagged question(s)</p>
             <div className="mt-2">
               {flaggedQuestions.map((q) => (
