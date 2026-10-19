@@ -7,11 +7,12 @@ export default function PracticePage() {
   const questions = getQuestions();
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selected, setSelected] = useState("");
+  const [answers, setAnswers] = useState<Record<number, string>>({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
 
   const question = questions[currentQuestion];
+  const selected = answers[currentQuestion] || "";
 
   const isCorrect =
     selected === question.correctAnswer;
@@ -25,9 +26,17 @@ export default function PracticePage() {
   };
 
   const handleNext = () => {
-    setSelected("");
-    setSubmitted(false);
-    setCurrentQuestion((prev) => prev + 1);
+    if (currentQuestion < questions.length - 1) {
+      setSubmitted(false);
+      setCurrentQuestion((prev) => prev + 1);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (currentQuestion > 0) {
+      setSubmitted(false);
+      setCurrentQuestion((prev) => prev - 1);
+    }
   };
 
   return (
@@ -63,7 +72,10 @@ export default function PracticePage() {
                 checked={selected === answer}
                 disabled={submitted}
                 onChange={(e) =>
-                  setSelected(e.target.value)
+                  setAnswers({
+                    ...answers,
+                    [currentQuestion]: e.target.value
+                  })
                 }
               />
 
@@ -99,25 +111,38 @@ export default function PracticePage() {
             <p className="mt-2">
               Explanation: {question.explanation}
             </p>
+          </div>
+        )}
 
-            {currentQuestion < questions.length - 1 ? (
-              <button
-                className="mt-4 border px-4 py-2"
-                onClick={handleNext}
-              >
-                Next Question
-              </button>
-            ) : (
-              <div className="mt-4">
-                <h2 className="text-2xl font-bold">
-                  Quiz Complete
-                </h2>
+        <div className="mt-6 flex justify-between">
+          {currentQuestion > 0 && (
+            <button
+              className="border px-4 py-2"
+              onClick={handlePrevious}
+            >
+              Previous Question
+            </button>
+          )}
 
-                <p>
-                  Final Score: {score} / {questions.length}
-                </p>
-              </div>
-            )}
+          {currentQuestion < questions.length - 1 && (
+            <button
+              className="border px-4 py-2"
+              onClick={handleNext}
+            >
+              Next Question
+            </button>
+          )}
+        </div>
+
+        {currentQuestion === questions.length - 1 && (
+          <div className="mt-6">
+            <h2 className="text-2xl font-bold">
+              Quiz Complete
+            </h2>
+
+            <p>
+              Current Score: {score}
+            </p>
           </div>
         )}
       </div>
