@@ -12,6 +12,7 @@ export default function PracticePage() {
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [flaggedQuestions, setFlaggedQuestions] = useState<number[]>([]);
   const [domainScores, setDomainScores] = useState<Record<string, { correct: number; total: number }>>({});
 
   const startQuiz = () => {
@@ -111,6 +112,14 @@ export default function PracticePage() {
     }
   };
 
+  const toggleFlag = () => {
+    if (flaggedQuestions.includes(currentQuestion)) {
+      setFlaggedQuestions(flaggedQuestions.filter((q) => q !== currentQuestion));
+    } else {
+      setFlaggedQuestions([...flaggedQuestions, currentQuestion]);
+    }
+  };
+
   const handlePrevious = () => {
     if (currentQuestion > 0) {
       setSubmitted(false);
@@ -131,12 +140,25 @@ export default function PracticePage() {
 
         <p>
           Score: {score}
+
+        <p>
+          Flagged: {flaggedQuestions.length}
+        </p>
         </p>
       </div>
 
       <div className="mt-6 border rounded p-6">
         <h2 className="text-xl font-bold">
           {question.question}
+
+        <button
+          className="mt-3 border px-3 py-1 bg-yellow-100"
+          onClick={toggleFlag}
+        >
+          {flaggedQuestions.includes(currentQuestion)
+            ? "🚩 Unflag Question"
+            : "🚩 Flag For Review"}
+        </button>
         </h2>
 
         <div className="mt-4">
@@ -221,6 +243,10 @@ export default function PracticePage() {
 
             <p>
               Final Score: {score} / {questions.length}
+
+        <p>
+          Flagged: {flaggedQuestions.length}
+        </p>
             </p>
 
             <p>
