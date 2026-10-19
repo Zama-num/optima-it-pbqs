@@ -140,10 +140,25 @@ export default function PracticePage() {
 
         <p>
           Score: {score}
+        </p>
 
         <p>
           Flagged: {flaggedQuestions.length}
-        </p>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        {questions.map((_, index) => (
+          <button
+            key={index}
+            className={`border px-3 py-1 ${currentQuestion === index ? "bg-blue-500 text-white" : answers[index] ? "bg-green-200" : "bg-gray-100"}`}
+            onClick={() => {
+              setCurrentQuestion(index);
+              setSubmitted(false);
+            }}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
         </p>
       </div>
 
@@ -246,6 +261,21 @@ export default function PracticePage() {
 
         <p>
           Flagged: {flaggedQuestions.length}
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        {questions.map((_, index) => (
+          <button
+            key={index}
+            className={`border px-3 py-1 ${currentQuestion === index ? "bg-blue-500 text-white" : answers[index] ? "bg-green-200" : "bg-gray-100"}`}
+            onClick={() => {
+              setCurrentQuestion(index);
+              setSubmitted(false);
+            }}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
         </p>
             </p>
 
