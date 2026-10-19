@@ -4,7 +4,7 @@ import { useState } from "react";
 import { getQuestions } from "@/lib/questions/loadQuestions";
 
 export default function PracticePage() {
-  const questions = getQuestions().slice(0,25);
+  const questions = [...getQuestions()].sort(() => Math.random() - 0.5).slice(0,25);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
