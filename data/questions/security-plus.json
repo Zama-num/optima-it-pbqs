@@ -1,0 +1,18 @@
+[
+  {
+    "id": "SY701-0001",
+    "objective": "2.1",
+    "domain": "Threats, Vulnerabilities and Mitigations",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which type of malware encrypts files and demands payment for decryption?",
+    "answers": [
+      "Trojan",
+      "Rootkit",
+      "Ransomware",
+      "Spyware"
+    ],
+    "correctAnswer": "Ransomware",
+    "explanation": "Ransomware encrypts data and demands payment for restoring access."
+  }
+]
