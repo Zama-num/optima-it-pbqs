@@ -1,0 +1,157 @@
+[
+  {
+    "id": "SY701-D3-0001",
+    "objective": "3.1",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which device filters network traffic based on defined security rules?",
+    "answers": ["Firewall", "Switch", "Printer", "Access Point"],
+    "correctAnswer": "Firewall",
+    "explanation": "Firewalls inspect and filter network traffic according to security policies."
+  },
+  {
+    "id": "SY701-D3-0002",
+    "objective": "3.1",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the primary purpose of network segmentation?",
+    "answers": [
+      "Reduce attack surface",
+      "Increase internet speed",
+      "Increase storage",
+      "Reduce electricity use"
+    ],
+    "correctAnswer": "Reduce attack surface",
+    "explanation": "Segmentation limits the spread of threats between network segments."
+  },
+  {
+    "id": "SY701-D3-0003",
+    "objective": "3.1",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What does DMZ stand for in networking?",
+    "answers": [
+      "Demilitarized Zone",
+      "Data Management Zone",
+      "Distributed Monitoring Zone",
+      "Device Management Zone"
+    ],
+    "correctAnswer": "Demilitarized Zone",
+    "explanation": "A DMZ isolates public-facing services from the internal network."
+  },
+  {
+    "id": "SY701-D3-0004",
+    "objective": "3.1",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which technology creates an encrypted tunnel across an untrusted network?",
+    "answers": [
+      "VPN",
+      "DNS",
+      "DHCP",
+      "FTP"
+    ],
+    "correctAnswer": "VPN",
+    "explanation": "A VPN provides secure communications across public networks."
+  },
+  {
+    "id": "SY701-D3-0005",
+    "objective": "3.2",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the primary goal of Zero Trust architecture?",
+    "answers": [
+      "Never trust, always verify",
+      "Eliminate passwords",
+      "Block all internet traffic",
+      "Remove firewalls"
+    ],
+    "correctAnswer": "Never trust, always verify",
+    "explanation": "Zero Trust requires continuous verification of identities and devices."
+  },
+  {
+    "id": "SY701-D3-0006",
+    "objective": "3.2",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which architecture principle grants only the permissions required for a task?",
+    "answers": [
+      "Least Privilege",
+      "High Availability",
+      "Redundancy",
+      "Load Balancing"
+    ],
+    "correctAnswer": "Least Privilege",
+    "explanation": "Least privilege reduces risk by limiting user permissions."
+  },
+  {
+    "id": "SY701-D3-0007",
+    "objective": "3.3",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which cloud model provides shared resources over the public internet?",
+    "answers": [
+      "Public Cloud",
+      "Private Cloud",
+      "Community Cloud",
+      "Hybrid Storage"
+    ],
+    "correctAnswer": "Public Cloud",
+    "explanation": "Public cloud infrastructure is shared among multiple customers."
+  },
+  {
+    "id": "SY701-D3-0008",
+    "objective": "3.3",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which cloud model is dedicated to a single organisation?",
+    "answers": [
+      "Private Cloud",
+      "Public Cloud",
+      "Community Cloud",
+      "Open Cloud"
+    ],
+    "correctAnswer": "Private Cloud",
+    "explanation": "Private clouds are used exclusively by one organisation."
+  },
+  {
+    "id": "SY701-D3-0009",
+    "objective": "3.4",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "Which technology is commonly used to centrally manage identities and access permissions?",
+    "answers": [
+      "IAM",
+      "RAID",
+      "DNS",
+      "NAT"
+    ],
+    "correctAnswer": "IAM",
+    "explanation": "Identity and Access Management controls authentication and authorisation."
+  },
+  {
+    "id": "SY701-D3-0010",
+    "objective": "3.4",
+    "domain": "Security Architecture",
+    "difficulty": "Beginner",
+    "type": "multiple_choice",
+    "question": "What is the primary purpose of Single Sign-On (SSO)?",
+    "answers": [
+      "Access multiple systems with one authentication",
+      "Increase network speed",
+      "Encrypt hard drives",
+      "Reduce storage costs"
+    ],
+    "correctAnswer": "Access multiple systems with one authentication",
+    "explanation": "SSO allows users to authenticate once and access multiple applications."
+  }
+]
