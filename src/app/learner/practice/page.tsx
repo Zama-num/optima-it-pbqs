@@ -10,6 +10,7 @@ export default function PracticePage() {
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [answerStatus, setAnswerStatus] = useState<Record<number, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
   const [flaggedQuestions, setFlaggedQuestions] = useState<number[]>([]);
@@ -42,7 +43,7 @@ export default function PracticePage() {
         </h1>
 
         <div className="mt-6">
-          <label className="block mb-2">
+          <label className={`block mb-2 p-2 rounded ${submitted ? answer === question.correctAnswer ? "bg-green-200 border border-green-600" : selected === answer ? "bg-red-200 border border-red-600" : "" : ""}`}>
             Select Quiz Size
           </label>
 
@@ -60,7 +61,7 @@ export default function PracticePage() {
           </select>
 
         <div className="mt-4">
-          <label className="block mb-2">
+          <label className={`block mb-2 p-2 rounded ${submitted ? answer === question.correctAnswer ? "bg-green-200 border border-green-600" : selected === answer ? "bg-red-200 border border-red-600" : "" : ""}`}>
             Select Domain
           </label>
 
@@ -100,6 +101,10 @@ export default function PracticePage() {
 
   const handleSubmit = () => {
     setSubmitted(true);
+    setAnswerStatus({
+      ...answerStatus,
+      [currentQuestion]: isCorrect,
+    });
 
     if (isCorrect) {
       setScore((prev) => prev + 1);
@@ -153,7 +158,7 @@ export default function PracticePage() {
         {questions.map((_, index) => (
           <button
             key={index}
-            className={`border px-3 py-1 ${currentQuestion === index ? "bg-blue-500 text-white" : answers[index] ? "bg-green-200" : "bg-gray-100"}`}
+            className={`border px-3 py-1 ${currentQuestion === index ? "bg-blue-500 text-white" : answerStatus[index] === true ? "bg-green-200" : answerStatus[index] === false ? "bg-red-200" : "bg-gray-100"}`}
             onClick={() => {
               setCurrentQuestion(index);
               setSubmitted(false);
@@ -184,7 +189,7 @@ export default function PracticePage() {
           {question.answers.map((answer: string) => (
             <label
               key={answer}
-              className="block mb-2"
+              className={`block mb-2 p-2 rounded ${submitted ? answer === question.correctAnswer ? "bg-green-200 border border-green-600" : selected === answer ? "bg-red-200 border border-red-600" : "" : ""}`}
             >
               <input
                 type="radio"
@@ -273,7 +278,7 @@ export default function PracticePage() {
         {questions.map((_, index) => (
           <button
             key={index}
-            className={`border px-3 py-1 ${currentQuestion === index ? "bg-blue-500 text-white" : answers[index] ? "bg-green-200" : "bg-gray-100"}`}
+            className={`border px-3 py-1 ${currentQuestion === index ? "bg-blue-500 text-white" : answerStatus[index] === true ? "bg-green-200" : answerStatus[index] === false ? "bg-red-200" : "bg-gray-100"}`}
             onClick={() => {
               setCurrentQuestion(index);
               setSubmitted(false);
