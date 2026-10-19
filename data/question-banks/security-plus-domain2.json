@@ -145,3 +145,229 @@
     "explanation": "Multi-factor authentication adds an additional layer of security beyond passwords."
   }
 ]
+,
+{
+  "id": "SY701-D2-0011",
+  "objective": "2.3",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "Which malware disguises itself as legitimate software?",
+  "answers": ["Trojan", "Worm", "Rootkit", "Ransomware"],
+  "correctAnswer": "Trojan",
+  "explanation": "A Trojan pretends to be legitimate software to trick users into installing it."
+},
+{
+  "id": "SY701-D2-0012",
+  "objective": "2.3",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "Which malware can self-replicate across networks without user interaction?",
+  "answers": ["Trojan", "Spyware", "Worm", "Adware"],
+  "correctAnswer": "Worm",
+  "explanation": "A worm spreads automatically between systems without requiring user action."
+},
+{
+  "id": "SY701-D2-0013",
+  "objective": "2.3",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "Which malware hides deep within an operating system to avoid detection?",
+  "answers": ["Rootkit", "Trojan", "Worm", "Adware"],
+  "correctAnswer": "Rootkit",
+  "explanation": "Rootkits are designed to conceal malicious activity and maintain privileged access."
+},
+{
+  "id": "SY701-D2-0014",
+  "objective": "2.4",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "What is credential stuffing?",
+  "answers": [
+    "Using stolen credentials against multiple services",
+    "Guessing a password manually",
+    "Stealing hashes from memory",
+    "Intercepting keyboard input"
+  ],
+  "correctAnswer": "Using stolen credentials against multiple services",
+  "explanation": "Credential stuffing relies on password reuse across multiple websites."
+},
+{
+  "id": "SY701-D2-0015",
+  "objective": "2.4",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "Which attack inserts malicious SQL commands into an application?",
+  "answers": [
+    "Cross-site scripting",
+    "SQL Injection",
+    "Buffer overflow",
+    "Session hijacking"
+  ],
+  "correctAnswer": "SQL Injection",
+  "explanation": "SQL injection exploits poor input validation to manipulate databases."
+},
+{
+  "id": "SY701-D2-0016",
+  "objective": "2.4",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Beginner",
+  "type": "multiple_choice",
+  "question": "Which attack injects malicious scripts into web pages viewed by users?",
+  "answers": [
+    "SQL Injection",
+    "Directory Traversal",
+    "Cross-Site Scripting",
+    "Privilege Escalation"
+  ],
+  "correctAnswer": "Cross-Site Scripting",
+  "explanation": "Cross-site scripting (XSS) allows attackers to execute scripts in a victim's browser."
+},
+{
+  "id": "SY701-D2-0017",
+  "objective": "2.4",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "What is the primary goal of a Business Email Compromise attack?",
+  "answers": [
+    "Trick users into sending money or sensitive information",
+    "Crash a web server",
+    "Steal Wi-Fi passwords",
+    "Disable antivirus software"
+  ],
+  "correctAnswer": "Trick users into sending money or sensitive information",
+  "explanation": "BEC attacks impersonate trusted individuals to deceive victims."
+},
+{
+  "id": "SY701-D2-0018",
+  "objective": "2.5",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which threat originates from trusted individuals within an organisation?",
+  "answers": [
+    "Insider Threat",
+    "DDoS",
+    "Supply Chain Attack",
+    "Spoofing"
+  ],
+  "correctAnswer": "Insider Threat",
+  "explanation": "Insider threats come from employees, contractors or other trusted individuals."
+},
+{
+  "id": "SY701-D2-0019",
+  "objective": "2.5",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which type of attack compromises trusted third-party software or services?",
+  "answers": [
+    "Supply Chain Attack",
+    "Phishing",
+    "Shoulder Surfing",
+    "Data Remanence"
+  ],
+  "correctAnswer": "Supply Chain Attack",
+  "explanation": "Supply-chain attacks exploit trust relationships between organisations and vendors."
+},
+{
+  "id": "SY701-D2-0020",
+  "objective": "2.5",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which indicator is most likely to suggest malware infection?",
+  "answers": [
+    "Unexpected outbound network traffic",
+    "Successful backups",
+    "System updates",
+    "Strong passwords"
+  ],
+  "correctAnswer": "Unexpected outbound network traffic",
+  "explanation": "Malware often communicates with external systems or exfiltrates data."
+},
+{
+  "id": "SY701-D2-0021",
+  "objective": "2.6",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which security control helps prevent brute-force attacks?",
+  "answers": [
+    "Account Lockout",
+    "RAID",
+    "DHCP",
+    "Load Balancing"
+  ],
+  "correctAnswer": "Account Lockout",
+  "explanation": "Account lockout policies limit repeated authentication attempts."
+},
+{
+  "id": "SY701-D2-0022",
+  "objective": "2.6",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "What is the best defence against known software vulnerabilities?",
+  "answers": [
+    "Regular Patching",
+    "Port Forwarding",
+    "Network Address Translation",
+    "Disk Defragmentation"
+  ],
+  "correctAnswer": "Regular Patching",
+  "explanation": "Applying updates closes known security vulnerabilities."
+},
+{
+  "id": "SY701-D2-0023",
+  "objective": "2.6",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which attack attempts to overflow memory and execute arbitrary code?",
+  "answers": [
+    "Buffer Overflow",
+    "Phishing",
+    "Replay Attack",
+    "Spoofing"
+  ],
+  "correctAnswer": "Buffer Overflow",
+  "explanation": "Buffer overflow attacks exploit poor memory handling."
+},
+{
+  "id": "SY701-D2-0024",
+  "objective": "2.6",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "A collection of infected systems controlled remotely by an attacker is known as a:",
+  "answers": [
+    "Botnet",
+    "Sandbox",
+    "Proxy",
+    "Container"
+  ],
+  "correctAnswer": "Botnet",
+  "explanation": "Botnets are networks of compromised devices under central control."
+},
+{
+  "id": "SY701-D2-0025",
+  "objective": "2.6",
+  "domain": "Threats, Vulnerabilities and Mitigations",
+  "difficulty": "Intermediate",
+  "type": "multiple_choice",
+  "question": "Which technology is most effective at reducing the impact of phishing-related password theft?",
+  "answers": [
+    "Multi-Factor Authentication",
+    "Port Security",
+    "RAID",
+    "NTP"
+  ],
+  "correctAnswer": "Multi-Factor Authentication",
+  "explanation": "MFA reduces reliance on passwords and greatly limits account compromise."
+}
